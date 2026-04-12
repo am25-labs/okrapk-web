@@ -22,10 +22,10 @@ const socNav: SocNavProps[] = [
 ---
 
 <header
-  class="bg-black sticky top-0 left-0 right-0 z-50 max-w-7xl mx-auto w-full flex items-center justify-between p-4"
+  class="bg-okra sticky top-0 left-0 right-0 z-50 max-w-7xl mx-auto w-full flex items-center justify-between p-4"
 >
   <a href="/"
-    ><img src="/am25-logo.svg" alt="AM25 Logo" width="100" title="AM25" /></a
+    ><img src="/okra-logo.svg" alt="OKRA Logo" width="160" title="OKRA" /></a
   >
 
   <nav
@@ -45,9 +45,7 @@ const socNav: SocNavProps[] = [
                 class="flex items-center uppercase hover:underline"
               >
                 {opt.label}
-                {isExternal && (
-                  <ArrowUpRight size={20} class="text-am-y shrink-0" />
-                )}
+                {isExternal && <ArrowUpRight size={20} class="shrink-0" />}
               </a>
             </li>
           );

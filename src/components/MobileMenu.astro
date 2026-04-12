@@ -40,9 +40,7 @@ const { items, socItems } = Astro.props;
                 class="flex items-center gap-2 rounded-xl px-3 py-2 text-base uppercase hover:bg-accent hover:text-accent-foreground"
               >
                 {opt.label}
-                {isExternal && (
-                  <ArrowUpRight size={20} class="text-am-y shrink-0" />
-                )}
+                {isExternal && <ArrowUpRight size={20} class="shrink-0" />}
               </a>
             </li>
           );
