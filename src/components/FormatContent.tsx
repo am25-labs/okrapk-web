@@ -48,7 +48,13 @@ export default function FormatContent({ blocks }: FormatContentProps) {
         }
 
         if (block.type === "heading") {
-          const Tag = `h${block.level}` as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+          const Tag = `h${block.level}` as
+            | "h1"
+            | "h2"
+            | "h3"
+            | "h4"
+            | "h5"
+            | "h6";
           return (
             <Tag key={key} className="font-bold uppercase mt-6 mb-3">
               {formatText(block.children)}
@@ -87,7 +93,7 @@ export default function FormatContent({ blocks }: FormatContentProps) {
                 className="w-full h-auto"
               />
               {block.image.caption && (
-                <figcaption className="text-xs text-center mt-2 text-muted-foreground">
+                <figcaption className="text-xs text-center mt-2">
                   {block.image.caption}
                 </figcaption>
               )}

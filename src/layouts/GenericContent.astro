@@ -21,10 +21,7 @@ const { title, updated, quote } = Astro.props;
 
       {
         updated && (
-          <span
-            class="flex items-center gap-2 text-sm text-muted-foreground mt-6"
-            title="Updated At"
-          >
+          <span class="flex items-center gap-2 text-sm mt-6" title="Updated At">
             <CalendarClockIcon size={16} />
             {updated}
           </span>
