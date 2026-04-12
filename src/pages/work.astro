@@ -1,0 +1,11 @@
+---
+import RootLayout from "@/layouts/RootLayout.astro";
+import WorksFilter from "@/components/work/WorksFilter.astro";
+import { getWorks } from "@/lib/strapi/fetchCollection";
+
+const { data: works } = await getWorks();
+---
+
+<RootLayout title="Work | AM25">
+  {works.length > 0 && <WorksFilter works={works} />}
+</RootLayout>

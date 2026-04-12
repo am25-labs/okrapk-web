@@ -1,0 +1,87 @@
+---
+import type { NavProps, SocNavProps } from "@/types";
+import { siInstagram, siGithub } from "simple-icons";
+import BrandIcon from "@/components/BrandIcon.astro";
+import MobileMenu from "@/components/MobileMenu.astro";
+import { ArrowUpRight } from "@lucide/astro";
+
+const mainNav: NavProps[] = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  // {
+  //   label: "Work",
+  //   href: "/work",
+  // },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+  {
+    label: "Labs",
+    href: "https://labs.am25.work",
+  },
+];
+
+const socNav: SocNavProps[] = [
+  { href: "https://www.instagram.com/am25std", icon: siInstagram, size: 20 },
+  { href: "https://github.com/am25-labs", icon: siGithub, size: 20 },
+];
+---
+
+<header
+  class="bg-black sticky top-0 left-0 right-0 z-50 max-w-7xl mx-auto w-full flex items-center justify-between p-4"
+>
+  <a href="/"
+    ><img src="/am25-logo.svg" alt="AM25 Logo" width="100" title="AM25" /></a
+  >
+
+  <nav
+    aria-label="Main and social navigation (desktop)"
+    class="hidden md:block"
+  >
+    <ul class="flex items-center space-x-6">
+      {
+        mainNav.map((opt) => {
+          const isExternal = opt.href.startsWith("https");
+          return (
+            <li>
+              <a
+                href={opt.href}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener" : undefined}
+                class="flex items-center uppercase hover:underline"
+              >
+                {opt.label}
+                {isExternal && (
+                  <ArrowUpRight size={20} class="text-am-y shrink-0" />
+                )}
+              </a>
+            </li>
+          );
+        })
+      }
+      {
+        socNav.map((opt) => {
+          return (
+            <li>
+              <a href={opt.href} target="_blank" rel="noopener">
+                <BrandIcon icon={opt.icon} size={opt.size} />
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+
+  <div class="md:hidden">
+    <MobileMenu items={mainNav} socItems={socNav} />
+  </div>
+</header>
+<div class="pb-12"></div>
