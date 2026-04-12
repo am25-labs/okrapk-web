@@ -26,7 +26,7 @@ export default defineConfig({
               height: "20",
               viewBox: "0 0 24 24",
               fill: "none",
-              stroke: "#ffff00",
+              stroke: "#000000",
               strokeWidth: "2",
               strokeLinecap: "round",
               strokeLinejoin: "round",
