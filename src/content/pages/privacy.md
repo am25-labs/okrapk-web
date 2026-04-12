@@ -1,9 +1,18 @@
 ---
 title: "Privacy Policy"
-updated: "April 8, 2026"
+updated: "April 12, 2026"
 ---
 
-This website is managed by AM25, S.A.S. de C.V. For questions or inquiries, please contact via [email](mailto:hola@am25.work).
+This website is managed by AM25, S.A.S. de C.V. For questions or inquiries, please contact via [email](mailto:hola@am25.work). OKRA is developed and maintained by AM25. This policy explains what data is collected when you use the OKRA website (okrapk.app) and the OKRA desktop application.
+
+## OKRA Desktop Application
+
+OKRA is a local desktop application. It operates entirely on you device and does not connect to any external server.
+
+- No personal data is collected
+- No usage data is transmitted
+- Colors picked by the user are stored locally on device only
+- No telemetry, analytics, or crash reporting is sent to AM25 or any third-party
 
 ## Site analytics
 
@@ -21,22 +30,6 @@ The analytical information is used exclusively for statistical purposes.
 This website is delivered through infrastructure services provided by [Cloudflare](https://www.cloudflare.com).
 
 Cloudflare may process limited technical data (such as IP addresses, request headers, and basic traffic metadata) as part of its role in content delivery, caching, and security. This processing is carried out in accordance with Cloudflare’s own privacy practices and is necessary for the proper functioning and protection of the website.
-
-## Payment processing
-
-AM25 uses [Wompi](https://wompi.sv) (operated by Bancoagrícola) to process card payments through secure payment links.
-
-When you complete a payment through an AM25 payment link, the following data is collected and transmitted to Wompi for the sole purpose of processing the transaction:
-
-- Card details (number, expiration date, and CVV)
-- Cardholder name and email address
-- Billing address and phone number
-
-AM25 does not store card numbers, CVV codes, or any sensitive payment credentials. Transaction records (amount, status, and Wompi transaction ID) are retained for accounting and legal compliance purposes.
-
-Payment data is protected using industry-standard encryption (TLS) in transit. Card transactions are authenticated through 3D Secure (3DS), an additional verification layer provided by the card issuer.
-
-Wompi’s data processing is governed by their own privacy practices and by the regulations applicable to Bancoagrícola as a supervised financial institution in El Salvador.
 
 ## Third-party links
 

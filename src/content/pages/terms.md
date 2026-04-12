@@ -1,45 +1,33 @@
 ---
 title: "Terms & Conditions"
-updated: "April 8, 2026"
+updated: "April 12, 2026"
 ---
 
-These terms govern the use of payment links issued by AM25, S.A.S. de C.V. (hereinafter "AM25"). By completing a payment through an AM25 payment link, you agree to these terms.
+These terms govern your access to the OKRA website (okrapk.app) and your use of the OKRA desktop application. OKRA is developed and maintained by AM25, S.A.S. DE C.V. (hereinafter "AM25"). By downloading, installing, or using OKRA, you agree to these terms.
 
 For questions or inquiries, please contact via [email](mailto:hola@am25.work).
 
-## Payment links
+## License
 
-AM25 issues payment links to its clients as a means of collecting payment for professional services rendered. Each payment link corresponds to a specific payment request and includes a concept, amount, and expiration date.
+OKRA is open-source software released under the [MIT License](https://github.com/am25-labs/okrapk/blob/main/LICENSE). You are free to use, copy, modify, and distribute the application in accordance with that license.
 
-Payment links are strictly personal and non-transferable. They may only be used by the intended recipient for the stated purpose.
+## Acceptable Use
 
-## Payment processing
+You agree not to:
 
-Payments are processed by [Wompi](https://wompi.sv), operated by Bancoagrícola, a financial institution supervised by the Superintendencia del Sistema Financiero de El Salvador.
+- Use OKRA for any unlawful purpose
+- Attempt to reverse-engineer, decompile, or tamper with any part of OKRA beyond what is permitted by the MIT License and applicable law
+- Use the OKRA name, logo, or branding in a way that implies endorsement by AM25 without prior written permission
 
-By submitting your payment, you authorize the charge to your card for the amount indicated in the payment request. All transactions are authenticated through 3D Secure (3DS) as required by your card issuer.
+## No Warranty
 
-AM25 does not store your card details. Once the transaction is submitted, payment processing is handled entirely by Wompi under their own terms and security standards.
+OKRA is provided "as is", without warranty of any kind. AM25 makes no guarantees regarding the accuracy, reliability, or fitness of the application for any particular purpose. Use it at your own risk.
 
-## Accepted payment methods
+## Limitation of Liability
 
-AM25 payment links accept credit and debit cards supported by Wompi. Card eligibility may vary depending on the issuing bank and card type.
+AM25 is not liable for any issues arising from the use of OKRA, including but not limited to data loss, system incompatibilities, or interruptions in functionality.
 
-## Pricing and currency
-
-All amounts are stated in United States Dollars (USD) and correspond exactly to the services described in the payment request. No additional fees are applied by AM25 at the time of payment.
-
-## Refunds and disputes
-
-Refunds, if applicable, are handled directly by AM25 on a case-by-case basis and subject to the terms agreed upon in the corresponding service engagement. To request a refund, contact via [email](mailto:hola@am25.work) with the payment reference number.
-
-Card disputes initiated directly with your bank may result in the suspension of ongoing services while the dispute is under review.
-
-## Liability
-
-AM25 is not liable for payment failures, card declines, or delays caused by your bank, card issuer, or Wompi's infrastructure. If a payment fails, you may retry the transaction or contact AM25 for an alternative arrangement.
-
-AM25 is not responsible for unauthorized use of a payment link if you have shared it with a third party.
+AM25 is not responsible for unauthorized use of the application if you have shared your installation or access with a third party.
 
 ## Changes to these terms
 
