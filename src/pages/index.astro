@@ -2,27 +2,9 @@
 import RootLayout from "@/layouts/RootLayout.astro";
 import Hero from "@/components/home/Hero.astro";
 import Supported from "@/components/home/Supported.astro";
-import Alert from "@/components/ui/astro/Alert.astro";
-import { ArrowUpRightIcon } from "@lucide/astro";
-import GridContainer from "@/layouts/GridContainer.astro";
 ---
 
 <RootLayout>
-  <GridContainer>
-    <div class="col-span-full">
-      <Alert variant="warning" class="mb-8">
-        <span slot="title">Beta Release Disclaimer</span>
-        <p>
-          This project is in early development. For security instructions, read
-          more about the
-          <a href="/beta" class="inline-flex items-center hover:font-bold"
-            >BETA HERE<ArrowUpRightIcon size={18} class="shrink-0" />.
-          </a>
-        </p>
-      </Alert>
-    </div>
-  </GridContainer>
-
   <Hero />
   <Supported />
 </RootLayout>
