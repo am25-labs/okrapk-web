@@ -9,13 +9,14 @@ const DOWNLOAD_MACOS =
   "https://github.com/am25-labs/okrapk/releases/download/0.3.0/OKRA_0.3.0_universal.dmg";
 ---
 
-<GridContainer class="pb-24 items-center">
-  <GridFour class="pb-16 md:pb-0">
+<GridContainer class="pb-16 items-center">
+  <GridFour class="pb-8 md:pb-0">
     <div class="col-span-full md:pr-4">
       <div class="flex flex-col">
         <h2 class="text-3xl leading-normal mb-8">
           Pick any color on your screen with a global hotkey
         </h2>
+
         <a
           id="btn-windows"
           href={DOWNLOAD_WINDOWS}
@@ -79,6 +80,23 @@ const DOWNLOAD_MACOS =
       />
     </div>
   </GridFour>
+
+  <div
+    class="col-span-full flex items-center justify-center w-full text-center mt-4 md:mt-8"
+  >
+    <p
+      id="shortcut-windows"
+      class="text-xl md:text-2xl leading-normal mt-2 mb-8 border px-4 py-1 w-full hidden"
+    >
+      Press <span class="text-3xl font-bold">Alt+C</span> to pick
+    </p>
+    <p
+      id="shortcut-macos"
+      class="text-xl md:text-2xl leading-normal mt-2 mb-8 border px-4 py-1 w-full hidden"
+    >
+      Press <span class="text-3xl font-bold">⌥+c</span> to pick
+    </p>
+  </div>
 </GridContainer>
 
 <script>
@@ -88,4 +106,5 @@ const DOWNLOAD_MACOS =
   const suffix = isMac ? "macos" : "windows";
   document.getElementById(`btn-${suffix}`)?.classList.remove("hidden");
   document.getElementById(`hero-${suffix}`)?.classList.remove("hidden");
+  document.getElementById(`shortcut-${suffix}`)?.classList.remove("hidden");
 </script>
