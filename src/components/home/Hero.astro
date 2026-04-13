@@ -63,7 +63,18 @@ const DOWNLOAD_MACOS =
 
   <GridFour>
     <div class="col-span-full">
-      <img src="/hero.png" alt="Hero Image" class="w-full h-auto" />
+      <img
+        id="hero-windows"
+        src="/hero-windows.png"
+        alt="Hero Image"
+        class="w-full h-auto hidden"
+      />
+      <img
+        id="hero-macos"
+        src="/hero-macos.png"
+        alt="Hero Image"
+        class="w-full h-auto hidden"
+      />
     </div>
   </GridFour>
 </GridContainer>
@@ -72,6 +83,7 @@ const DOWNLOAD_MACOS =
   const ua = navigator.userAgent;
   const isMac = /Macintosh|MacIntel|MacPPC|Mac68K/.test(ua);
 
-  const btnId = isMac ? "btn-macos" : "btn-windows";
-  document.getElementById(btnId)?.classList.remove("hidden");
+  const suffix = isMac ? "macos" : "windows";
+  document.getElementById(`btn-${suffix}`)?.classList.remove("hidden");
+  document.getElementById(`hero-${suffix}`)?.classList.remove("hidden");
 </script>
