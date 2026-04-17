@@ -22,12 +22,13 @@ const {
 } = Astro.props as Props;
 
 const variantClasses: Record<Variant, string> = {
-  default: "bg-primary text-primary-foreground",
-  secondary: "bg-secondary text-secondary-foreground",
+  default: "bg-primary text-primary-foreground rounded-full",
+  secondary: "bg-secondary text-secondary-foreground rounded-full",
   destructive:
-    "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40",
-  outline: "border-border bg-input/30 text-foreground",
-  ghost: "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
+    "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40 rounded-full",
+  outline: "border-border rounded-full",
+  ghost:
+    "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50 rounded-full",
   link: "text-primary underline-offset-4 hover:underline",
 };
 ---
