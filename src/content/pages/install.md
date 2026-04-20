@@ -2,11 +2,9 @@
 title: "Install"
 ---
 
-**This application is currently in an early stage of development.** As such, you may encounter bugs, unexpected behavior, or incomplete features. Functionality and performance may change significantly in future updates. For macOS, all these steps and permissions are completely normal and unavoidable, including apps downloaded from the App Store itself.
+This application is currently in development. As such, you may encounter bugs, unexpected behavior, or incomplete features. Functionality and performance may change significantly in future updates. For macOS, all these steps and permissions are completely normal and unavoidable, including apps downloaded from the App Store itself.
 
-## Disclaimer
-
-The reason the app is flagged as risky for both systems is due to the lack of an authentication certificate. Currently, purchasing a Windows certificate for approximately $500/year + $99/year for Apple's developer program for an independent, free project like OKRA is not a viable option. **That doesn't mean the app is unsafe or dangerous.**
+The reason the app is flagged as risky for both systems is due to the lack of an authentication certificate. Currently purchasing a Windows certificate for ~$500/yr and $99/yr for Apple's developer program for an independent and free project is not a viable option. **That DOESN'T mean the app is unsafe or dangerous.**
 
 ## Windows install
 
